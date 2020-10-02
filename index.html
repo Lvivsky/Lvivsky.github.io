@@ -9,51 +9,61 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
-    <!-- FONTS -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/Grandstander/static/"> -->
-    
     <!-- MY STYLE -->
     <link rel="stylesheet" href="css/keyframes.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
-
     <header class="header">
         <div class="container dis-flex">
             <div class="header-logo">
-                <a href="#home" class="logo-link">The Name</a>
+                <img src="img/1.png" alt="logo" class="logotype heartbeat">
+                <a href="#home" class="logo-link">Ihor Payensky</a>
             </div>
             <nav class="header-menu dis-flex">
                 <a href="#about" class="menu-link">About</a> <!-- CV -->
                 <a href="#works" class="menu-link">Works</a>
-                <a href="#contact" class="menu-link">
-                    Contact
-                </a>
+                <a href="#contact" class="menu-link">Contact</a>
             </nav>
         </div>
     </header>
-
 
     <main>
         <!-- HOME SECTION -->
         <section class="section" id="home">
             <div class="container">
                 <div class="home-title scale-in-center">
-                    <h1 class="title">Java Developer</h1>
-                    <button class="btn btn-secondary heartbeat">Contact with me</button>
+                    <h3>Java Full Stack Developer</h3>
+                    <a class="btn heartbeat" href="#contact" type="button">Contact with me</a>
                 </div>
             </div>
         </section>
         
-        
         <!-- ABOUT SECTION -->
-        <section class="section" id="about">about</section>
+        <section class="section" id="about">
+            <div class="container">
+                <div>
+                    <h1>Skills</h1>
+                    <p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <!-- WORKS SECTION -->
-        <section class="section" id="works">works</section>
+        <section class="section" id="works">
+            <div class="comtainer d-flex">
+                <div>
+                    <img src="https://avatars3.githubusercontent.com/u/38349979?s=400&u=d06c94b078ab7f6cbcd0a85fdcf2a1f03ff3b92d&v=4" alt="">
+                </div>
+                
+                
+            </div>
+        </section>
 
         <!-- CONTACT SECTION -->
         <section class="section" id="contact">
@@ -62,23 +72,20 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5146.159739113371!2d24.020382461968556!3d49.84095677847755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add717532cff9%3A0x1ea627f45b408179!2z0JvRjNCy0ZbQstGB0YzQutC40Lkg0L3QsNGG0ZbQvtC90LDQu9GM0L3QuNC5INGD0L3RltCy0LXRgNGB0LjRgtC10YIg0ZbQvNC10L3RliDQhtCy0LDQvdCwINCk0YDQsNC90LrQsA!5e0!3m2!1suk!2sua!4v1600192704068!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
                 <div class="contact-form">
-                    <form data-aos="fade-left"
-                    data-aos-anchor="#example-anchor"
-                    data-aos-offset="500"
-                    data-aos-duration="1500">
+                    <form name="sendMessageForm">
                         <div class="form-group">
                             <label for="name" class="text-light">Name</label>
-                            <input autocomplete="off" type="text" id="name" class="form-control">
+                            <input required autocomplete="off" type="text" id="name" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="phone" class="text-light">Phone</label>
-                            <input autocomplete="off" type="phone" id="phone" class="form-control">
+                            <input required autocomplete="off" type="text" value="+ (380) " id="phone" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="message" class="text-light">Message</label>
-                            <textarea autocomplete="off" id="message" cols="30" rows="10" class="form-control"></textarea>
+                            <textarea required autocomplete="off" id="message" cols="30" rows="10" class="form-control"></textarea>
                         </div>
-                        <button type="button" class="btn btn-block btn-secondary heartbeat">Submit</button>
+                        <button type="button" name="send" class="btn btn-block btn-warning heartbeat">Submit</button>
                     </form>
                 </div>
             </div>
@@ -86,11 +93,11 @@
     </main>
 
 
-    <footer></footer>
-
+    <!-- <footer></footer> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
