@@ -56,7 +56,6 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .container {
@@ -159,16 +158,99 @@ html {
     color: white;
 }
 
+.section-box {
+    margin: 5px;
+    display: block;
+    width: 40%;
+    height: 60%;
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 5%;
+    transition: .6s;
+}
+.section-box:hover {
+    width: 60%;
+    height: 80%;
+    background-color: rgba(0,0,0,0.7);
+}
 
-/* CONTACT */   
+
+.section-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-title {
+    margin-top: 20px;
+    cursor: pointer;
+    text-shadow: 100px green ;
+}
+
+section > div > div > div > p {
+    font-size: 20px;
+}
+section > div > div > div > p > a {
+    font-size: 20px;
+    color:  orange;
+}
+section > div > div > div > p > a:hover {
+    font-size: 20px;
+    text-decoration: none;
+    color:  orangered;
+}
+
+.about-text{
+    margin: 5px;
+    display: block;
+}
+
 #works {
     background: url(https://images.unsplash.com/photo-1542729610-051bac8a5ec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1403&q=80);
     background-size: cover;
     background-attachment: fixed;
 }
 
+.git-photo {
+    background: url(https://avatars3.githubusercontent.com/u/38349979?s=400&u=d06c94b078ab7f6cbcd0a85fdcf2a1f03ff3b92d&v=4);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: .7s;
+    cursor: pointer;
+}
+.git-photo:hover {
+    height: 150px;
+    width: 150px;
+}
 
-/* CONTACT */   
+
+.git-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 15%;
+    width: 40%;
+    background: rgba(0,0,0,0.25);
+    border-radius: 2%;
+    transition: .7s;
+}
+.git-container:hover {
+    height: 20%;
+    width: 45%;
+    background: rgba(0,0,0,0.7);
+}
+
+.git-link {
+    color: orange;
+    font-size: 30px;
+    transition:  .7s;
+}
+.git-link:hover {
+    font-size: 40px;
+    color: orangered;
+    text-decoration: none;  
+}
+
 #contact {
     background: url(https://images.unsplash.com/photo-1505235687559-28b5f54645b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80);
     background-size: cover;
